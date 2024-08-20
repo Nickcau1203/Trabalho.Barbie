@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=".style.css">
+</head>
+<body>
+    <h1>Formulário Completo</h1>
+    <form action="/submit" method="post" enctype="multipart/form-data" autocomplete="on">
+    <form>
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="nome"> Nome Completo: </label>
+            <input type="text" id="nome" name="nome"  placeholder="Nome Completo" maxlength="100">
+
+            <label for="email"> Seu e-mail: </label>
+            <input type="text" name="email" placeholder="seuemail@gmail.com" required maxlength="100">
+
+            <label for="senha"> Senha: </label>
+            <input type="password" name="senha" placeholder="Senha" minlength="8" required maxlength="12">
+            body
+
+        <fieldset>
+             
+    
+            </select>
+            <label name="descricao"> Descrição: </label>
+            <textarea name="descricao" id="descricao" placeholder="Conte-nos sobre você!" required></textarea>
+        </fieldset>
+      
+    <fieldset>
+            <legend> Envio de Arquivo </legend>
+            <label for="foto"> Foto de Perfil: </label>
+            <input type="file" d="foto" name="foto" accept="image/png, image/jpg" required>
+            <button type="submit"> Enviar </button>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbie</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Bem vindo!</h1>
+    <div class="menu-horizontal">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+    <h1>Contato </h1>
+    <form action="/submit" method="post" enctype="multipart/form-data" autocomplete="on">
+    <form>
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="nome"> Nome Completo: </label>
+            <input type="text" id="nome" name="nome"  placeholder="Nome Completo" maxlength="100">
+
+            <label for="email"> Seu e-mail: </label>
+            <input type="text" name="email" placeholder="seuemail@gmail.com" required maxlength="100">
+
+            <label for="mensagem"> Mensagem: </label>
+            <input type="password" name="mensagem" placeholder="Mensagem" minlength="8" required maxlength="12">
+            
+</body>
+</html>
