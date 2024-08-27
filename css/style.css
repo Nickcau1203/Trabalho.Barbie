@@ -1,41 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href=".style.css">
-</head>
-<body>
-    <h1>Formulário Completo</h1>
-    <form action="/submit" method="post" enctype="multipart/form-data" autocomplete="on">
-    <form>
-        <fieldset>
-            <legend>Informações Pessoais</legend>
-            <label for="nome"> Nome Completo: </label>
-            <input type="text" id="nome" name="nome"  placeholder="Nome Completo" maxlength="100">
+body {
+    background-color:  #e4aacd;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #ccc;
+    height: 45px;
+    padding: 10px;
+}
 
-            <label for="email"> Seu e-mail: </label>
-            <input type="text" name="email" placeholder="seuemail@gmail.com" required maxlength="100">
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 20px 0;
+}
 
-            <label for="senha"> Senha: </label>
-            <input type="password" name="senha" placeholder="Senha" minlength="8" required maxlength="12">
-            body
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
 
-        <fieldset>
-             
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: hwb(261 79% 9%);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ffffff;
+}
+
+.barbie{
+    width: 400px;  
+}
+.poli{
     
-            </select>
-            <label name="descricao"> Descrição: </label>
-            <textarea name="descricao" id="descricao" placeholder="Conte-nos sobre você!" required></textarea>
-        </fieldset>
-      
-    <fieldset>
-            <legend> Envio de Arquivo </legend>
-            <label for="foto"> Foto de Perfil: </label>
-            <input type="file" d="foto" name="foto" accept="image/png, image/jpg" required>
-            <button type="submit"> Enviar </button>
-        </fieldset>
-    </form>
-</body>
-</html>
+}
+
+
